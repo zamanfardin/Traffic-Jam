@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+    <title>Austin Traffic Jam</title>
+</head>
+<body>
+    <header>
+        <h1>Traffic Jam</h1>
+        <h2>A logic puzzle for kids ages 5 and up</h2>
+    </header>
+    <div class="game-wrapper">
+        <aside><p><b>Instructions:</b> <br>See if you can get the red car to the other side of the traffic jam! You can only move to <b>free</b> spaces. <br> About this map: The minimum number of moves required to solve this map is <b>50</b>.</b>
+            <br>Try using the timer at the bottom of the puzzle to see how quickly you can solve Traffic Jam!</p> <button onclick='init()'>reset game</button></aside>
+        <div class="board-wrapper">
+            <canvas id="frontCanvas" width="600" height="600"></canvas>
+            <canvas id="canvas" width="600" height="600"></canvas>
+            <div style="display:none;">
+                <img id="arrow"
+                     src="images/arrow-01.png"
+                     width="600" height="100">
+              </div>
+            <div id="timer"></div>
+            <button onclick='start()'>start</button>
+            <button onclick='pause()'>pause</button>
+            <button onclick='cont()'>resume</button>
+            <button onclick='stop()'>stop</button>
+        </div>
+    </div>
+</body>
+</html>
